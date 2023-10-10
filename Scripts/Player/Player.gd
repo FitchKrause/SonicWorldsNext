@@ -1357,7 +1357,11 @@ func action_move(delta):
 func action_jump(animation = "roll", airJumpControl = true, playSound=true):
 	animator.play(animation)
 	animator.advance(0)
-	movement.y = -jmp
+	if (any_action_pressed() == true):
+		if (movement.y < -releaseJmp):
+			movement.y = -releaseJmp
+		else:
+			movement.y = -jmp
 	if playSound:
 		sfx[0].play()
 	airControl = airJumpControl
