@@ -17,7 +17,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -4)]
+"values": [Vector2(0, -5)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -686,7 +686,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="81"]
 resource_name = "roll"
-length = 0.6
+length = 0.8
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -695,10 +695,10 @@ tracks/0/path = NodePath("Sonic/Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [32, 33, 36, 34, 35, 36]
+"values": [32, 36, 33, 36, 34, 36, 35, 36]
 }
 
 [sub_resource type="Animation" id="82"]
@@ -1262,15 +1262,16 @@ libraries = {
 z_index = 5
 material = ExtResource("1_bjmss")
 texture = ExtResource("2_6xy2a")
-offset = Vector2(0, -4)
+offset = Vector2(0, -5)
 hframes = 16
 vframes = 18
+frame = 35
 
 [node name="DashDust" type="AnimatedSprite2D" parent="Sprite2D"]
 sprite_frames = SubResource("96")
 autoplay = "default"
 frame = 3
-offset = Vector2(-9, -4)
+offset = Vector2(-9, -5)
 
 [node name="CrouchBox" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)

@@ -19,7 +19,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -4)]
+"values": [Vector2(0, -5)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1622,17 +1622,17 @@ z_index = 5
 material = ExtResource("1")
 position = Vector2(0, -4)
 texture = ExtResource("2")
-offset = Vector2(0, -4)
+offset = Vector2(0, -5)
 hframes = 16
 vframes = 18
+frame = 60
 script = ExtResource("5")
 
 [node name="DashDust" type="AnimatedSprite2D" parent="Sprite2D"]
-visible = false
 sprite_frames = SubResource("96")
 autoplay = "default"
 frame = 5
-offset = Vector2(-9, -4)
+offset = Vector2(-9, -5)
 
 [node name="Tails" type="Sprite2D" parent="Sprite2D"]
 visible = false
